@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<footer *ngIf="!this.submitted" class="quiz-section" id="quiz-section">
+    <form id="quiz-form">
+        <label>
+            Love Hamsters?
+            <input type="checkbox" id="checkbox1" (change)="checkCheckboxes()">
+        </label>
+        <label>
+            Want A Pet?
+            <input type="checkbox" id="checkbox2" (change)="checkCheckboxes()">
+        </label>
+        <label>
+            Got Leftovers?
+            <input type="checkbox" id="checkbox3" (change)="checkCheckboxes()"> 
+        </label>
+        <label>
+            Wallet Too Big?
+            <input type="checkbox" id="checkbox4" (change)="checkCheckboxes()">
+        </label>
+        <button type="button" id="submit-button" [disabled]="!allChecked" (click)="submitQuiz()">Submit</button>
+    </form>
+</footer>
+
+<footer *ngIf="this.submitted" class="quiz-done">
+    <p>Vote Nigel For President 2024!</p>
+</footer>

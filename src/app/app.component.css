@@ -1,0 +1,10 @@
+:host {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.page {
+    margin-top: 5rem; /* Offset by the height of the header */
+    margin-bottom: 4rem; /* Offset by the height of the footer */
+    overflow-y: auto;
+    flex: 1;
+}

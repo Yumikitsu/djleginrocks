@@ -1,0 +1,79 @@
+.quiz-section {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    background-color: rgb(77, 77, 177);
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0;
+    overflow-x: auto;
+}
+
+.quiz-section form {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
+    align-items: center;
+    justify-content: start;
+    width: 90%;
+}
+
+.quiz-section label {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.quiz-section input {
+    margin-left: 0.5rem;
+}
+
+.quiz-section button {
+    padding: 0.4rem 0.5rem;
+    width: 5rem;
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+
+
+.quiz-done {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0;
+    overflow: none;
+    margin: 0;
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red, orange, yellow, green, blue, indigo, violet, red, orange);
+    background-size: 200% auto;
+    animation: rainbow 5s linear infinite;
+}
+
+.quiz-done p {
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000,
+        -1px  0   0 #000,
+         1px  0   0 #000,
+         0   -1px 0 #000,
+         0    1px 0 #000;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 95% 50%;
+    }
+}

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+<div class="SiteContainer">
+    <div class="hamster" *ngFor="let h of hamsters">
+        <img src="{{h.url}}"> <!--routerLink="{{h.id}}">-->
+        <div class="hamsterInfo">
+            <p>Name: {{h.name}}</p>
+            <p>Age: {{h.age}}</p>
+            <p>Quirk: {{h.quirk}}</p>
+        </div>
+    </div>
+</div>
